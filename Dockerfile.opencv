@@ -63,3 +63,9 @@ RUN apt-get install -y tzdata
 RUN dpkg-reconfigure --frontend noninteractive tzdata
 
 RUN apt-get install python-opencv -y
+
+RUN pip3 install --upgrade numpy
+
+RUN pip3 install requests
+RUN pip3 install Flask
+RUN pip3 install scikit-image
